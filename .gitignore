@@ -1,0 +1,9 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/*.json
+data/*.jsonl
+data/*.lock
+logs/*.log
+logs/*.log.*
