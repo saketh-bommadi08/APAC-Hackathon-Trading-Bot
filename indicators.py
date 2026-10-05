@@ -1,12 +1,13 @@
 import math
 from dataclasses import dataclass
+from typing import Optional
 
 @dataclass
 class EMAState:
-    fast: float | None = None
-    slow: float | None = None
-    prev_fast: float | None = None
-    prev_slow: float | None = None
+    fast: Optional[float] = None
+    slow: Optional[float] = None
+    prev_fast: Optional[float] = None
+    prev_slow: Optional[float] = None
 
 class EMATracker:
     """Exact crossover tracker: signal only when a strict cross occurs."""

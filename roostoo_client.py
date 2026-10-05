@@ -3,6 +3,7 @@ import hmac
 import time
 from dataclasses import dataclass
 import requests
+from typing import Optional
 from logging_utils import get_logger
 from config import (
     API_KEY, SECRET_KEY, ROOSTOO_BASE_URL, REQUEST_TIMEOUT_SECONDS,
@@ -26,7 +27,7 @@ class OrderOutcomeUnknown(APIError):
 
 @dataclass
 class RoostooClient:
-    session: requests.Session | None = None
+    session: Optional[requests.Session] = None
 
     def __post_init__(self):
         self.session = self.session or requests.Session()
