@@ -4,24 +4,6 @@
 
 I built this bot as the final live implementation of the EMA strategy I selected during my research phase.
 
-I deliberately kept the trading logic fixed after the research stage. I am **not** adding another indicator, a different entry rule, machine learning, reinforcement learning, or a second strategy.
-
-The final configuration is:
-
-| Parameter | Value |
-|---|---:|
-| Assets | TRX/USD, AVAX/USD, DOT/USD |
-| Timeframe | 1 hour |
-| Fast EMA | 35 |
-| Slow EMA | 60 |
-| Take Profit | +8% |
-| Stop Loss | -2% |
-| BUY allocation | 10% of free USD |
-| Position type | Long-only |
-| Execution | Market orders |
-
-The three assets are the portfolio selected from my earlier train/validation research. The test period was deliberately kept out of the selection rule.
-
 ---
 
 ## My strategy
@@ -56,7 +38,7 @@ I do not trade on an unfinished candle.
 
 A completed candle produces the signal. The bot then waits for the next hourly execution window and uses the first accepted Roostoo price observation in that new hour as the execution reference.
 
-If the bot misses an hourly execution window, it does **not** fabricate a historical trade. It catches its EMA state up to the newest continuous Roostoo candle and waits for the next valid signal window.
+If the bot misses an hourly execution window, it does not fabricate a historical trade. It catches its EMA state up to the newest continuous Roostoo candle and waits for the next valid signal window.
 
 ---
 
@@ -75,21 +57,42 @@ This means a position does not have to wait for the next hourly candle for its T
 
 ---
 
+## Strategy configuration
+
+Parameter             | Value
+----------------------|----------------------------------------------------------
+Assets                | TRX/USD, AVAX/USD, DOT/USD, BNB/USD, SUI/USD, BTC/USD
+Timeframe             | 1 hour
+Fast EMA              | 35
+Slow EMA              | 60
+Take Profit           | +8%
+Stop Loss             | -2%
+BUY allocation        | 10% of free USD
+Position type         | Long-only
+Execution             | Market orders
+
+The six assets are the portfolio selected from my earlier train/validation research. The test period was deliberately kept out of the selection rule
+
+---
+
 ## Why Binance is used
 
 Roostoo's live ticker gives me current prices, but I need enough historical closes to initialize a 60-period EMA when the bot starts.
 
-For that initial warm-up only, I use `python-binance` to retrieve completed **1-hour Binance candles** for the explicitly mapped symbols:
+For that initial warm-up only, I use `python-binance` to retrieve completed 1-hour Binance candles for the explicitly mapped symbols:
 
 ```text
 TRX/USD  -> TRXUSDT
 AVAX/USD -> AVAXUSDT
 DOT/USD  -> DOTUSDT
+BNB/USD  -> BNBUSDT
+SUI/USD  -> SUIUSDT
+BTC/USD  -> BTCUSDT
 ```
 
 I use those historical closes to initialize the EMA tracker.
 
-After live Roostoo data begins, new EMA observations come from **Roostoo only**.
+After live Roostoo data begins, new EMA observations come from Roostoo only.
 
 I do not use Binance prices to execute orders, and I do not use Binance to generate a separate trading signal.
 
@@ -99,7 +102,7 @@ This separation is intentional: Binance solves the historical warm-up problem; R
 
 ## Multi-asset portfolio
 
-All three assets share the same USD balance.
+All six assets share the same USD balance.
 
 Each BUY attempts to allocate 10% of the currently available USD balance, subject to Roostoo's pair-specific `MiniOrder` and `AmountPrecision`.
 
@@ -118,20 +121,23 @@ Before an order is sent, it:
 ## Live architecture
 
 ```text
-                    ┌──────────────────────┐
-                    │ Binance 1h history   │
-                    │ warm-up only         │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                         EMA 35 / EMA 60
-                               ▲
-                               │
+                  ┌──────────────────────┐
+                  │ Binance 1h history   │
+                  │ warm-up only         │
+                  └──────────┬───────────┘
+                              │
+                              ▼
+                        EMA 35 / EMA 60
+                              ▲
+                              │
 ┌─────────────────┐     ┌─────┴─────────┐
-│ Roostoo ticker  │────►│ 1h aggregation │
-│ TRX/USD         │     │ completed only │
+│ Roostoo ticker  │────►│ 1h aggregation│
+│ TRX/USD         │     │ completed only│
 │ AVAX/USD        │     └─────┬─────────┘
 │ DOT/USD         │           │
+| BNB/USD         |           |
+| SUI/USD         |           |
+| BTC/USD         |           |
 └─────────────────┘           ▼
                          crossover signal
                                │
@@ -154,36 +160,48 @@ Before an order is sent, it:
 
 ## Robustness is the main design goal
 
-I designed the bot around the principle:
+Robustness Checks:
+- Configuration and parameter validation
+- API timeout, error handling and bounded retries
+- Server-time synchronization and clock-drift checks
+- Malformed/stale market-data detection
+- Missing-candle and candle-gap recovery
+- Completed-candle enforcement to prevent lookahead
+- EMA warm-up and duplicate-candle protection
+- Pair-specific minimum-order and precision validation
+- Insufficient-balance and position-state checks
+- Order rejection and ambiguous-execution handling
+- Duplicate-order prevention
+- Persistent-state recovery across restarts
+- Atomic state writes
+- Single-process locking
+- Graceful shutdown handling
+- Structured rotating runtime logs
+- Automated smoke and robustness tests
+- **No blind order retries**
 
-> **When the bot is uncertain, it should stop rather than guess.**
+      This is one of the most important protections.
 
-### No blind order retries
+      If a market-order request times out, I cannot safely assume that the order failed. It may have reached Roostoo and filled successfully.
 
-This is one of the most important protections.
+      Therefore:
 
-If a market-order request times out, I cannot safely assume that the order failed. It may have reached Roostoo and filled successfully.
-
-Therefore:
-
-```text
-place order
-    │
-    ├── clear response → process it
-    │
-    └── timeout/transport failure
-             │
-             ▼
-       query order history
-             │
-       ┌─────┴─────┐
-       │           │
-    exactly 1    anything else
-       │           │
-    reconcile     HALT
+      ```text
+      place order
+      │
+      ├── clear response → process it
+      │
+      └── timeout/transport failure
+                  │
+                  ▼
+            query order history
+                  │
+            ┌─────┴─────┐
+            │           │
+      exactly 1    anything else
+            │           │
+         reconcile     HALT
 ```
-
-The bot never blindly resubmits an order after an ambiguous response.
 
 ---
 
@@ -238,6 +256,9 @@ Every accepted Roostoo ticker is appended to a pair-specific JSONL file:
 data/TRX_USD_ticker.jsonl
 data/AVAX_USD_ticker.jsonl
 data/DOT_USD_ticker.jsonl
+data/BNB_USD_ticker.jsonl
+data/SUI_USD_ticker.jsonl
+data/BTC_USD_ticker.jsonl
 ```
 
 Derived hourly candles are also persisted.
@@ -339,17 +360,6 @@ If the resulting order would fall below `MiniOrder`, the bot refuses to submit i
 
 ## Safety modes
 
-The `.env.example` defaults to:
-
-```text
-DRY_RUN=true
-ALLOW_LIVE_TRADING=false
-```
-
-I keep those defaults intentionally conservative.
-
-Before testing with keys, I first run the local checks.
-
 I do not commit my actual `.env` file or API secrets.
 
 ---
@@ -377,7 +387,7 @@ roostoo_ema_bot/
 ├── .env.example
 ├── .gitignore
 ├── data/              # runtime, ignored
-└── logs/              # runtime, ignored
+└── logs/              
 ```
 
 ---
@@ -465,24 +475,3 @@ data/bot_state.json
 
 before treating the deployment as ready.
 
----
-
-## What I deliberately did not add
-
-I did not add:
-
-- AI/ML
-- reinforcement learning
-- extra indicators
-- a second trading strategy
-- short selling
-- leverage
-- martingale logic
-- recovery trades
-- arbitrary signal generation to force daily orders
-- blind order retries
-- fabricated historical executions
-
-The purpose of this final bot is not to look complicated.
-
-It is to implement the strategy I researched, exactly, with enough state management, logging, validation, and failure handling that I can understand what happened when something goes wrong.

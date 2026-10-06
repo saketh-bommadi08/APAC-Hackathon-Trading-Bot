@@ -3,7 +3,7 @@ def main():
     from indicators import EMATracker
     from strategy import crossover_decision
     assert EMA_FAST == 35 and EMA_SLOW == 60
-    assert PAIRS == ("TRX/USD", "AVAX/USD", "DOT/USD")
+    assert PAIRS == ("TRX/USD", "AVAX/USD", "DOT/USD","BNB/USD","SUI/USD","BTC/USD")
     tracker = EMATracker(EMA_FAST, EMA_SLOW)
     tracker.seed([100.0] * 60)
     signal, fast, slow = tracker.update(100.0)

@@ -30,17 +30,20 @@ ROOSTOO_BASE_URL = os.getenv("ROOSTOO_BASE_URL", "https://mock-api.roostoo.com")
 API_KEY = os.getenv("ROOSTOO_API_KEY", "")
 SECRET_KEY = os.getenv("ROOSTOO_SECRET_KEY", "")
 
-# These are the three assets selected by the research stage.
+# These are the six assets selected by the research stage.
 # Binance symbols are used only for historical EMA warm-up.
 PAIRS = tuple(
     x.strip() for x in os.getenv(
-        "ROOSTOO_PAIRS", "TRX/USD,AVAX/USD,DOT/USD"
+        "ROOSTOO_PAIRS", "TRX/USD,AVAX/USD,DOT/USD,BNB/USD,SUI/USD,BTC/USD"
     ).split(",") if x.strip()
 )
 BINANCE_SYMBOLS = {
     "TRX/USD": "TRXUSDT",
     "AVAX/USD": "AVAXUSDT",
     "DOT/USD": "DOTUSDT",
+    "BNB/USD": "BNBUSDT",
+    "SUI/USD": "SUIUSDT",
+    "BTC/USD": "BTCUSDT",
 }
 
 EMA_FAST = 35

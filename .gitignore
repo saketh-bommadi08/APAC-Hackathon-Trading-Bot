@@ -1,9 +1,8 @@
 .env
-.venv/
+
+# Runtime data
+data/*
+
+# Python cache
 __pycache__/
 *.pyc
-data/*.json
-data/*.jsonl
-data/*.lock
-logs/*.log
-logs/*.log.*
