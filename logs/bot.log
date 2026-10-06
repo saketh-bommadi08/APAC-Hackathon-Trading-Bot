@@ -285,3 +285,199 @@
 2026-10-06 01:45:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=186
 2026-10-06 01:45:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
 2026-10-06 01:45:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1107
+2026-10-06 01:46:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:46:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=178
+2026-10-06 01:46:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:46:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:46:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=186
+2026-10-06 01:46:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:46:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=502
+2026-10-06 01:46:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=172
+2026-10-06 01:46:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=171
+2026-10-06 01:46:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:46:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=171
+2026-10-06 01:46:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:46:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1426
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=188
+2026-10-06 01:47:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=172
+2026-10-06 01:47:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=171
+2026-10-06 01:47:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=172
+2026-10-06 01:47:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:47:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:47:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=187
+2026-10-06 01:47:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:47:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:47:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=173
+2026-10-06 01:47:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:47:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1102
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=173
+2026-10-06 01:48:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=171
+2026-10-06 01:48:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=172
+2026-10-06 01:48:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=172
+2026-10-06 01:48:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:48:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=server_time | path=/v3/serverTime
+2026-10-06 01:48:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=server_time | elapsed_ms=544
+2026-10-06 01:48:41+0000 | INFO     | roostoo.api | SERVER_TIME_SYNC | offset_ms=459
+2026-10-06 01:48:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:48:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=172
+2026-10-06 01:48:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:48:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:48:42+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=540
+2026-10-06 01:48:42+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:48:42+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1988
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=185
+2026-10-06 01:49:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=184
+2026-10-06 01:49:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=189
+2026-10-06 01:49:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=185
+2026-10-06 01:49:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:49:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:49:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=186
+2026-10-06 01:49:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:49:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:49:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=543
+2026-10-06 01:49:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:49:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1513
+2026-10-06 01:50:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:50:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=174
+2026-10-06 01:50:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:50:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:50:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=172
+2026-10-06 01:50:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:50:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=549
+2026-10-06 01:50:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=173
+2026-10-06 01:50:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=543
+2026-10-06 01:50:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:50:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=175
+2026-10-06 01:50:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:50:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1841
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=178
+2026-10-06 01:51:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=173
+2026-10-06 01:51:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=185
+2026-10-06 01:51:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=185
+2026-10-06 01:51:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:51:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:51:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=511
+2026-10-06 01:51:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:51:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:51:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=192
+2026-10-06 01:51:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:51:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1461
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=186
+2026-10-06 01:52:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=185
+2026-10-06 01:52:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=186
+2026-10-06 01:52:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=171
+2026-10-06 01:52:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:52:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:52:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=184
+2026-10-06 01:52:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:52:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:52:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=185
+2026-10-06 01:52:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:52:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1136
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=173
+2026-10-06 01:53:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=186
+2026-10-06 01:53:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=172
+2026-10-06 01:53:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=185
+2026-10-06 01:53:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:53:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:53:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=503
+2026-10-06 01:53:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:53:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:53:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=186
+2026-10-06 01:53:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:53:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1444
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=server_time | path=/v3/serverTime
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=server_time | elapsed_ms=190
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | SERVER_TIME_SYNC | offset_ms=105
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=186
+2026-10-06 01:54:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=173
+2026-10-06 01:54:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=171
+2026-10-06 01:54:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:54:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:54:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=185
+2026-10-06 01:54:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:54:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:54:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=501
+2026-10-06 01:54:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:54:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:54:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=172
+2026-10-06 01:54:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:54:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1618
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:TRX/USD | path=/v3/ticker
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:TRX/USD | elapsed_ms=173
+2026-10-06 01:55:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=TRX/USD | completed_candles=0
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:AVAX/USD | path=/v3/ticker
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:AVAX/USD | elapsed_ms=385
+2026-10-06 01:55:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=AVAX/USD | completed_candles=0
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:DOT/USD | path=/v3/ticker
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:DOT/USD | elapsed_ms=172
+2026-10-06 01:55:40+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=DOT/USD | completed_candles=0
+2026-10-06 01:55:40+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BNB/USD | path=/v3/ticker
+2026-10-06 01:55:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BNB/USD | elapsed_ms=185
+2026-10-06 01:55:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BNB/USD | completed_candles=0
+2026-10-06 01:55:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:SUI/USD | path=/v3/ticker
+2026-10-06 01:55:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:SUI/USD | elapsed_ms=185
+2026-10-06 01:55:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=SUI/USD | completed_candles=0
+2026-10-06 01:55:41+0000 | INFO     | roostoo.api | API_REQUEST_START | method=GET | label=ticker:BTC/USD | path=/v3/ticker
+2026-10-06 01:55:41+0000 | INFO     | roostoo.api | API_REQUEST_OK | method=GET | label=ticker:BTC/USD | elapsed_ms=541
+2026-10-06 01:55:41+0000 | INFO     | bot | WARMUP_LIVE_DATA | pair=BTC/USD | completed_candles=0
+2026-10-06 01:55:41+0000 | INFO     | bot | LOOP_COMPLETE | elapsed_ms=1680
